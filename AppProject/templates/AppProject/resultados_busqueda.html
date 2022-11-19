@@ -1,0 +1,8 @@
+{% extends 'AppProject/base.html' %}
+{% block contenido %}
+<ul>
+    {% for pelis in pelicula %}
+    <li>Nombre: {{pelis.nombre_pelicula}} - Director: {{pelis.director}} - Fecha de estreno: {{pelis.fecha_estreno}} - Sinopsis: {{pelis.sinopsis}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

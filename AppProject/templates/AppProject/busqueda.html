@@ -1,0 +1,9 @@
+{% extends 'AppProject/base.html' %}
+{% block contenido %}
+<form action="{% url 'des-busqueda-resultado' %}" method="get">
+    <p>
+        Nombre de la pelicula: <input type="text" name="nombre_pelicula">
+        <input type="submit" value="Buscar">
+    </p>
+</form>
+{% endblock %}
